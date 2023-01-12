@@ -2,21 +2,25 @@ import React from 'react'
 
 export default function Action({inputRef,handleClick}) {
   return (
-    <div className="p-3  d-flex  position-relative">
+    <div className='p-2'>
+   <div className=" d-flex bot-chat rounded">
     <input
       type="text"
       autocomplete="off"
-      class="w-100 p-2 text-white bot-chat rounded  border-0"
+      class="w-100 p-2  rounded bot-chat text-dark   border-0"
       id="exampleFormControlInput1"
       placeholder="Write something..."
       ref={inputRef}
     />
     <div
-      className="d-flex align-items-center"
+      className="d-flex align-items-center   justify-content-center p-3"
+      style={{cursor:"pointer"}}
       onClick={handleClick}
     >
-      <i className="fa-solid fa-paper-plane text-white position-absolute end-0 me-4"></i>
+      <i className="fa-solid fa-paper-plane  text-white"></i>
     </div>
   </div>
+    </div>
+ 
   )
 }

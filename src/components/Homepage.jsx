@@ -4,6 +4,7 @@ import axios from "axios";
 import { useRef } from "react";
 import { useState } from "react";
 import Action from "./Action";
+import Background from "./Background";
 
 export default function Homepage() {
   const [board, setBoard] = useState([]);
@@ -22,18 +23,23 @@ export default function Homepage() {
         console.log(res.data);
         setIsTyping(false);
 
-        setBoard((current) => [ 
+        setBoard((current) => [
           ...current,
           { bot: true, message: res.data.bot },
         ]);
       });
   };
   return (
-    <div className="container p-0 board-clr board-corner  mt-5">
-      <div className="rounded">
-        <Chat board={board} isTyping={isTyping} />
+    <>
+  <Background/>
+      <div className="position-absolute top-0 w-100 ">
+        <div className="container p-0 board-clr  board-corner  mt-5 ">
+          <div className="rounded">
+            <Chat board={board} isTyping={isTyping} />
+          </div>
+          <Action inputRef={input} handleClick={handleClick} />
+        </div>
       </div>
-      <Action inputRef={input} handleClick={handleClick}/>
-    </div>
+    </>
   );
 }
