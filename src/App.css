@@ -12,7 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -107,7 +106,29 @@ div::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to top, #00b09b, #96c93d);
   border-radius: 25px;
 }
+.send-btn:hover{
+  
+  background-color: rgba(18, 15, 20, 0.2);
 
+}
+.board-header{
+  background-color: white;
+  /* border-radius: 1rem; */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+
+}
+.title{
+  color: black;
+   font-size: larger;
+   font-weight: bold;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
 /* ///////////////////////////////////////////////////// */
 
 .area {

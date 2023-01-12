@@ -9,11 +9,11 @@ export default function Action({inputRef,handleClick}) {
       autocomplete="off"
       class="w-100 p-2  rounded bot-chat text-dark   border-0"
       id="exampleFormControlInput1"
-      placeholder="Write something..."
+      placeholder="Ask something..."
       ref={inputRef}
     />
     <div
-      className="d-flex align-items-center   justify-content-center p-3"
+      className="d-flex align-items-center send-btn   justify-content-center p-3"
       style={{cursor:"pointer"}}
       onClick={handleClick}
     >

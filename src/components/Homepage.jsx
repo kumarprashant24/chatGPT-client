@@ -27,7 +27,10 @@ export default function Homepage() {
           ...current,
           { bot: true, message: res.data.bot },
         ]);
+        input.current.value=""
       });
+
+      
   };
   return (
     <>

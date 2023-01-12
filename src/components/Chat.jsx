@@ -12,12 +12,16 @@ export default function Chat({ board, isTyping }) {
   };
   return (
     <>
-      <div className="border-bottom p-3 mb-3 ">
-        <div className="d-flex">
+      <div className="p-2 mb-3 board-header">
+      <div className="d-flex justify-content-between">
+      <div className="d-flex align-items-center ms-2">
           <div className="dot bg-danger"></div>
           <div className="dot bg-warning ms-1"></div>
           <div className="dot bg-success ms-1"></div>
         </div>
+        <div className="title">Ask Anything You Want</div>
+        <div></div>
+      </div>
       </div>
       <ScrollToBottom
         className="scroll-bottom"
