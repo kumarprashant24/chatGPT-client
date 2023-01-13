@@ -20,7 +20,7 @@ export default function Homepage() {
     ]);
     setIsTyping(true);
     axios
-      .post("http://localhost:5000", { question: input.current.value })
+      .post(`${API_URL}`, { question: input.current.value })
       .then((res) => {
         console.log(res.data);
         setIsTyping(false);
