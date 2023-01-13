@@ -14,6 +14,7 @@ export default function Homepage() {
 
 
   const handleClick = async () => {
+    console.log(API_URL);
     setBoard((current) => [
       ...current,
       { bot: false, message: input.current.value },
