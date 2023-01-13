@@ -5,11 +5,13 @@ import { useRef } from "react";
 import { useState } from "react";
 import Action from "./Action";
 import Background from "./Background";
+import {API_URL} from "../config"
 
 export default function Homepage() {
   const [board, setBoard] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
   const input = useRef();
+
 
   const handleClick = async () => {
     setBoard((current) => [
