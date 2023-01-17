@@ -20,7 +20,7 @@ export default function Bubble({ data }) {
       <div
         className={`${
           data.bot ? "bot-chat" : "user-chat"
-        } chatbubble mb-2 ms-2 shadow-lg rounded`}
+        } chatbubble mb-2 ms-2 shadow-lg`}
       >
         {'loader' in data?  <img src={data.loader} className="typing-loader"/>: data.bot ? (
           <>

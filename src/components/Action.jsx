@@ -7,7 +7,7 @@ export default function Action({inputRef,handleClick}) {
     <input
       type="text"
       autocomplete="off"
-      class="w-100 p-2  rounded bot-chat text-dark   border-0"
+      class="w-100 p-2 rounded bot-chat text-dark   border-0"
       id="exampleFormControlInput1"
       placeholder="Ask something..."
       ref={inputRef}

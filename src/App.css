@@ -57,13 +57,11 @@
   width: 100%;
 }
 .bot-chat {
-
   background: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.6),
     rgba(233, 233, 233, 0.1)
   );
-  border-radius: 40px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
   color: white;
 }
@@ -72,12 +70,12 @@
   background-image: linear-gradient(to right, #00b4db, #0083b0);
   color: white;
 }
+input:focus{
+  outline: none;
+}
 .board-clr {
-  /* background: #120F14; */
-
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
-  /* background-color: rgba(255, 255, 255, 0.45); */
   background-color: rgba(18, 15, 20, 0.2);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
@@ -113,7 +111,6 @@ div::-webkit-scrollbar-thumb {
 }
 .board-header{
   background-color: white;
-  /* border-radius: 1rem; */
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
